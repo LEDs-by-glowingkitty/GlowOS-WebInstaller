@@ -126,7 +126,7 @@
 <div id="flasher">
 
 <ol>
-  <li>Plug in your ESP to a USB port. We will install GlowOS <span id="verstr">0.12.0</span> to it.</li>
+  <li>Plug in your ESP32 to a USB port. We will install GlowOS <span id="verstr">0.1.0</span> to it.</li>
   <li id="coms">Hit "Install" and select the correct COM port. <a onclick="showSerialHelp()">No device found?</a></li>
   <li>Get GlowOS installed and connected in less than 3 minutes!</li>
 </ol><br><br>
@@ -156,11 +156,6 @@
     var sel = document.getElementById('ver');
     var opt = sel.options[sel.selectedIndex];
     var m = opt.dataset.manifest;
-    var me = opt.dataset.ethernet;
-    document.getElementById('eth').style.display = me ? "block":"none";
-    if (me && document.getElementById('ethernet').checked) {
-      m = me;
-    }
     document.getElementById('inst').setAttribute('manifest',m);
     document.getElementById('verstr').textContent = opt.text;
   }
