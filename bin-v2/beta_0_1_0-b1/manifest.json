@@ -1,6 +1,6 @@
 {
   "name": "GlowOS",
-  "version": "0.1.0-b1-03-04-2022-18-12",
+  "version": "0.1.0-b1-03-04-2022-18-44",
   "home_assistant_domain": "glowos",
   "builds": [
     {
