@@ -1,13 +1,13 @@
 {
   "name": "GlowOS",
-  "version": "0.1.0-b1-03-04-2022-18-44",
+  "version": "GlowCore Mini v2.0 (GlowOS 0.14.1)",
   "home_assistant_domain": "glowos",
   "builds": [
     {
       "chipFamily": "ESP32",
       "parts": [
         { "path": "esp32_bootloader_v4.bin", "offset": 0 },
-        { "path": "GlowOS_v0_1_0_beta_1_esp32.bin", "offset": 65536 }
+        { "path": "glowcore_mini_v2_0.bin", "offset": 65536 }
       ]
     }
   ]
