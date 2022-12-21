@@ -126,8 +126,8 @@
 <div id="flasher">
 
 <ol>
-  <li>Plug in your ESP32 to a USB port. We will install GlowOS <span id="verstr">0.1.0</span> to it.</li>
-  <li id="coms">Hit "Install" and select the correct COM port. <a onclick="showSerialHelp()">No device found?</a></li>
+  <li>Plug in your device to a USB port. We will install the latest version of GlowOS to it.</li>
+  <li id="coms">Select the correct device in the dropdown menu and then hit "Install" and select the correct COM port. <a onclick="showSerialHelp()">No device found?</a></li>
   <li>Get GlowOS installed and connected in less than 3 minutes!</li>
 </ol><br><br>
 
@@ -141,8 +141,9 @@
 
   <!-- add new builds here -->
   <select id="ver" class="btn" onchange="setManifest()">
-    <optgroup label="Beta">
-      <option data-manifest="bin-v2/beta_0_1_0-b1/manifest.json">0.1.0-b1-03-04-2022-18-44</option>
+    <optgroup label="v0.14.1">
+      <option data-manifest="bin-v2/glowcore_v2_0/manifest.json">GlowCore v2.0</option>
+      <option data-manifest="bin-v2/glowcore_mini_v2_0/manifest.json">GlowCore Mini v2.0</option>
     </optgroup>
   </select><br><br>
   
