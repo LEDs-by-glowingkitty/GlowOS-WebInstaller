@@ -1,6 +1,6 @@
 {
   "name": "GlowOS",
-  "version": "GlowCore Mini v2.0 (GlowOS 0.14.1)",
+  "version": "0.14.1",
   "home_assistant_domain": "glowos",
   "builds": [
     {
