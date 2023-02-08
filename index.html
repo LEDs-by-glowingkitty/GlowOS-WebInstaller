@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Install GlowOS</title>
+    <meta property="og:title" content="LEDs by glowingkitty" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <script
+    type="module"
+    src="installer-v2/install-button.js"
+    ></script>
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <style data-section-id="dropdown">
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body onload="checkSupported()">
+    <div>
+      <link href="./install-glow-o-s.css" rel="stylesheet" />
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html@0.1.11/dist/default/lib.umd.js"
+      ></script>
+
+      <div class="install-glow-o-s-container">
+        <div class="header-container">
+          <header data-thq="thq-navbar" class="header-navbar-interactive">
+            <a href="https://glowingkitty.com" class="header-navlink">
+              <img
+                alt="logo"
+                src="public/playground_assets/logo1.svg"
+                class="header-logo"
+              />
+            </a>
+            <div
+              data-thq="thq-navbar-nav"
+              data-role="Nav"
+              class="header-desktop-menu"
+            >
+              <nav
+                data-thq="thq-navbar-nav-links"
+                data-role="Nav"
+                class="header-nav"
+              >
+                <a href="https://glowingkitty.com/products" class="header-navlink1 headermenulink">
+                  <span>Products</span>
+                </a>
+                <a
+                  href="https://workshops.glowingkitty.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="header-link headermenulink"
+                >
+                  <span>Workshops</span>
+                </a>
+                <a href="#help" class="header-link1 headermenulink">
+                  <span>Get help</span>
+                </a>
+                <a
+                  href="https://blog.glowingkitty.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="header-link2 headermenulink"
+                >
+                  <span>Blog</span>
+                </a>
+              </nav>
+            </div>
+            <div data-thq="thq-burger-menu" class="header-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="header-icon">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </div>
+            <div data-thq="thq-mobile-menu" class="header-mobile-menu">
+              <div
+                data-thq="thq-mobile-menu-nav"
+                data-role="Nav"
+                class="header-nav1"
+              >
+                <div class="header-container1">
+                  <a href="https://glowingkitty.com" class="header-navlink2">
+                    <img
+                      alt="image"
+                      src="public/playground_assets/logo1.svg"
+                      class="header-image"
+                    />
+                  </a>
+                  <div data-thq="thq-close-menu" class="header-menu-close">
+                    <svg viewBox="0 0 1024 1024" class="header-icon2">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav
+                  data-thq="thq-mobile-menu-nav-links"
+                  data-role="Nav"
+                  class="header-nav2"
+                >
+                  <a
+                    href="https://glowingkitty.com/products"
+                    class="header-link3 headermenulink mobilemenuheader"
+                  >
+                    <span>Products</span>
+                  </a>
+                  <a
+                    href="https://workshops.glowingkitty.com"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="header-link4 headermenulink mobilemenuheader"
+                  >
+                    <span>Workshops</span>
+                  </a>
+                  <a
+                    href="#help"
+                    class="header-link5 headermenulink mobilemenuheader"
+                  >
+                    <span>Get help</span>
+                  </a>
+                  <a
+                    href="https://blog.glowingkitty.com"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="header-link6 headermenulink mobilemenuheader"
+                  >
+                    <span>Blog</span>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </header>
+        </div>
+        <div class="install-glow-o-s-container1">
+          <h1 class="install-glow-o-s-text">GlowOS</h1>
+          <span class="install-glow-o-s-text1 selectfield">
+            Install GlowOS v0.15 on
+          </span>
+          <select id="ver" class="install-glow-o-s-select selectfield" onchange="setManifest()">
+            <!-- <option data-manifest="bin-v2/glowtower_v1_0/manifest.json">GlowTower v1.0</option>
+            <option data-manifest="bin-v2/glowlight_v1_0/manifest.json">GlowLight v1.0</option> -->
+            <option data-manifest="bin-v2/glowcore_v2_0/manifest.json">GlowCore v2.0</option>
+            <!-- <option data-manifest="bin-v2/glowcore_mini_v3_0/manifest.json">GlowCore Mini v3.0</option>
+            <option data-manifest="bin-v2/glowsign_v1_0_rc2/manifest.json">GlowSign v1.0 RC2</option>
+            <option data-manifest="bin-v2/glowband_v1_0_beta1/manifest.json">GlowBand v1.0 beta 1</option>
+            <option data-manifest="bin-v2/magiqwand_v1_0_rc2/manifest.json">MagiqWand v1.0 RC2</option>
+            <option data-manifest="bin-v2/magiqwand_v1_0_rc1/manifest.json">MagiqWand v1.0 RC1</option> -->
+          </select>
+          <esp-web-install-button id="inst" manifest="bin-v2/dev/manifest.json">
+            <button class="button" slot="activate">Install now</button>
+          </esp-web-install-button><br>
+        </div>
+        <div
+          class="need-help-with-a-project-container need-help-with-a-project-root-class-name5"
+        >
+          <div id="help" class="need-help-with-a-project-topic-section"></div>
+          <div class="need-help-with-a-project-container1">
+            <span class="need-help-with-a-project-text">
+              <span>Need help with an LED project?</span>
+            </span>
+            <div class="need-help-with-a-project-container2">
+              <div class="need-help-with-a-project-container3">
+                <span class="need-help-with-a-project-text1">
+                  <span>Option 1:</span>
+                </span>
+                <span class="need-help-with-a-project-text2">
+                  <span>Get 1 to 1 help from glowingkitty!</span>
+                </span>
+                <img
+                  alt="image"
+                  src="public/playground_assets/twopeople.svg"
+                  class="need-help-with-a-project-image"
+                />
+                <a
+                  href="https://shop.glowingkitty.com/products/ask-a-mentor"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="need-help-with-a-project-link button"
+                >
+                  <span>Book appointment</span>
+                </a>
+              </div>
+              <div class="need-help-with-a-project-container4">
+                <span class="need-help-with-a-project-text3">
+                  <span>Option 2:</span>
+                </span>
+                <span class="need-help-with-a-project-text4">
+                  <span>Join our community &amp; ask around!</span>
+                </span>
+                <img
+                  alt="image"
+                  src="public/playground_assets/discord.svg"
+                  class="need-help-with-a-project-image1"
+                />
+                <a
+                  href="https://discord.glowingkitty.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="need-help-with-a-project-link1 button"
+                >
+                  <span>Join community</span>
+                </a>
+              </div>
+            </div>
+            <span class="need-help-with-a-project-text5">
+              <span>
+                Need help with an LED lamp or dev board by glowingkitty?
+              </span>
+            </span>
+            <a href="https://glowingkitty.com/products" class="need-help-with-a-project-navlink">
+              <span>
+                Check out the product pages for FAQ, documentation and more.
+              </span>
+            </a>
+            <span class="need-help-with-a-project-text6">
+              <span>Still have open questions?</span>
+            </span>
+            <span class="need-help-with-a-project-text7">
+              <span>Chat with us via WhatsApp, or email us:</span>
+            </span>
+            <div class="need-help-with-a-project-container5">
+              <a
+                href="https://whatsapp.glowingkitty.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="need-help-with-a-project-link2"
+              >
+                <span>WhatsApp</span>
+              </a>
+              <a
+                href="mailto:support@glowingkitty.com?subject="
+                class="need-help-with-a-project-link3"
+              >
+                <span>Email</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-social-container footer-social-root-class-name5">
+          <span class="footer-social-text"><span>Stay updated</span></span>
+          <div class="footer-social-container1">
+            <a
+              href="https://patreon.glowingkitty.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="footer-social-link"
+            >
+              <img
+                alt="image"
+                src="public/playground_assets/social_patreon.svg"
+                class="footer-social-image socialmedia_icon"
+              />
+            </a>
+            <a
+              href="https://discord.glowingkitty.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="footer-social-link1"
+            >
+              <img
+                alt="image"
+                src="public/playground_assets/social_discord.svg"
+                class="footer-social-image1 socialmedia_icon"
+              />
+            </a>
+            <a
+              href="https://instagram.glowingkitty.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="footer-social-link2"
+            >
+              <img
+                alt="image"
+                src="public/playground_assets/social_instagram.svg"
+                class="footer-social-image2 socialmedia_icon"
+              />
+            </a>
+            <a
+              href="https://blog.glowingkitty.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="footer-social-link3"
+            >
+              <img
+                alt="image"
+                src="public/playground_assets/social_medium.svg"
+                class="footer-social-image3 socialmedia_icon"
+              />
+            </a>
+            <a
+              href="https://git.glowingkitty.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="footer-social-link4"
+            >
+              <img
+                alt="image"
+                src="public/playground_assets/social_github.svg"
+                class="footer-social-image4 socialmedia_icon"
+              />
+            </a>
+          </div>
+        </div>
+        <div
+          class="footer-web-links-container footer-web-links-root-class-name5"
+        >
+          <a
+            href="https://shop.glowingkitty.com/pages/imprint"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="footer-web-links-link"
+          >
+            <span>Imprint</span>
+          </a>
+          <a
+            href="https://shop.glowingkitty.com/policies/privacy-policy"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="footer-web-links-link1"
+          >
+            <span>Privacy</span>
+          </a>
+          <a href="https://glowingkitty.com/about" class="footer-web-links-navlink">
+            <span>About</span>
+          </a>
+        </div>
+        <div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+    <script>  
+      function setManifest() {
+        var sel = document.getElementById('ver');
+        var opt = sel.options[sel.selectedIndex];
+        var m = opt.dataset.manifest;
+        document.getElementById('inst').setAttribute('manifest',m);
+        document.getElementById('verstr').textContent = opt.text;
+      }
+      
+      function checkSupported() {
+        if (document.getElementById('inst').hasAttribute('install-unsupported')) unsupported();
+        else setManifest();
+      }
+      
+      function unsupported() {
+        document.getElementById('flasher').innerHTML = "Sorry, your browser is not yet supported!<br>Please try on Desktop Chrome or Edge.<br>"
+      }
+      
+      function showSerialHelp() {
+        document.getElementById('coms').innerHTML = `Hit "Install" and select the correct COM port.<br><br>
+        You might be missing the drivers for your board.<br>
+        Here are drivers for chips commonly used in ESP boards:<br>
+        <a href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers" target="_blank">CP2102 (square chip)</a><br>
+        <a href="https://github.com/nodemcu/nodemcu-devkit/tree/master/Drivers" target="_blank">CH34x (rectangular chip)</a><br><br>
+        Make sure your USB cable supports data transfer.<br><br>
+        `;
+      }
+    </script>
+  </body>
+</html>
