@@ -194,7 +194,9 @@
           <esp-web-install-button id="inst" manifest="bin-v2/dev/manifest.json">
             <button class="button" slot="activate">Install now</button>
           </esp-web-install-button><br>
-          <div id="flasher"></div>
+          <div style="display: none;" class="install-glow-o-s-text1 selectfield" id="flasher">
+            Sorry, your browser is not yet supported!<br>Please try on Desktop Chrome or Edge.<br>
+          </div>
         </div>
         <div
           class="need-help-with-a-project-container need-help-with-a-project-root-class-name5"
@@ -393,7 +395,8 @@
       }
       
       function unsupported() {
-        document.getElementById('flasher').innerHTML = "Sorry, your browser is not yet supported!<br>Please try on Desktop Chrome or Edge.<br>"
+        document.getElementById("inst").style.display = "none";
+        document.getElementById('flasher').style.display = "block";
       }
       
       function showSerialHelp() {
