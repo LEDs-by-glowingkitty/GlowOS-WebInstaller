@@ -7,7 +7,7 @@
       "chipFamily": "ESP32",
       "parts": [
         { "path": "esp32_bootloader_v4.bin", "offset": 0 },
-        { "path": "glowcore_v2_0.bin", "offset": 65536 }
+        { "path": "magiqwand_v1_0_RC2.bin", "offset": 65536 }
       ]
     }
   ]
