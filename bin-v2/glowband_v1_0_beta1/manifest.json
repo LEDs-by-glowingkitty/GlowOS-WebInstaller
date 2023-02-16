@@ -1,6 +1,6 @@
 {
   "name": "GlowOS",
-  "version": "0.15.0",
+  "version": "0.15.1",
   "home_assistant_domain": "glowos",
   "builds": [
     {
