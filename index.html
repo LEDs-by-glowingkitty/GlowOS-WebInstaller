@@ -7,8 +7,6 @@
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
 
-    <link rel="icon" href="public/playground_assets/favicon.svg" type="image/svg+xml" sizes="any">
-
     <script
     type="module"
     src="installer-v2/install-button.js"
@@ -35,6 +33,12 @@
 
       }
     </style>
+    <link
+      rel="shortcut icon"
+      href="publicpublic/playground_assets/favicon_1.png"
+      type="icon/png"
+      sizes="32x32"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
@@ -180,7 +184,7 @@
         </div>
         <div class="install-glow-o-s-container1">
           <h1 class="install-glow-o-s-text">GlowOS</h1>
-          <span class="install-glow-o-s-text1 selectfield">
+          <span class="install-glow-o-s-text01 selectfield">
             Install GlowOS v0.15.1 on
           </span>
           <select id="ver" class="install-glow-o-s-select selectfield" onchange="setManifest()">
@@ -195,11 +199,26 @@
             <option data-manifest="bin-v2/magiqwand_v1_0_rc1/manifest.json">MagiqWand v1.0 RC1</option>
           </select>
           <esp-web-install-button id="inst" manifest="bin-v2/dev/manifest.json">
-            <button class="button" slot="activate">Install now</button>
+            <button class="button" slot="activate">Reinstall GlowOS</button>
           </esp-web-install-button><br>
           <div style="display: none;" class="install-glow-o-s-text1 selectfield" id="flasher">
             Sorry, your browser is not yet supported!<br>Please try on Desktop Chrome or Edge.<br>
           </div>
+          <span id="moreinfoanddownloadlink" style="display: none;" class="install-glow-o-s-text02 selectfield" >
+            <span class="install-glow-o-s-text03">Warning:</span>
+            <br class="install-glow-o-s-text04" />
+            <span class="install-glow-o-s-text05">
+              All settings will be deleted.
+            </span>
+            <br class="install-glow-o-s-text06" />
+            <br class="install-glow-o-s-text07" />
+            <br class="install-glow-o-s-text08" />
+            <br class="install-glow-o-s-text09" />
+            <span class="install-glow-o-s-text10">or</span>
+            <br class="install-glow-o-s-text11" />
+            <br class="install-glow-o-s-text12" />
+            <a id="update-download-link" class="install-glow-o-s-text13">Click here to download<br>software update.</a>
+          </span>
         </div>
         <div
           class="need-help-with-a-project-container need-help-with-a-project-root-class-name5"
@@ -375,8 +394,6 @@
             <span>About</span>
           </a>
         </div>
-        <div>
-        </div>
       </div>
     </div>
     <script
@@ -384,17 +401,34 @@
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
     ></script>
     <script>  
+      function generateDownloadURL(input) {
+          let baseURL = "https://install.glowingkitty.com/";
+          let splitInput = input.split("/");
+          let fileName = splitInput[splitInput.length - 2];
+          let newURL = baseURL + input.replace("manifest.json", fileName + ".bin");
+          return newURL;
+      }
       function setManifest() {
         var sel = document.getElementById('ver');
         var opt = sel.options[sel.selectedIndex];
         var m = opt.dataset.manifest;
+
+        let output = generateDownloadURL(m);
+
+        document.getElementById("update-download-link").setAttribute("href",output);
+        document.getElementById("moreinfoanddownloadlink").style.display="block";
+
         document.getElementById('inst').setAttribute('manifest',m);
         document.getElementById('verstr').textContent = opt.text;
       }
       
       function checkSupported() {
-        if (document.getElementById('inst').hasAttribute('install-unsupported')) unsupported();
-        else setManifest();
+        if (document.getElementById('inst').hasAttribute('install-unsupported')){
+          unsupported();
+        }
+        else {
+          setManifest();
+        }
       }
       
       function unsupported() {

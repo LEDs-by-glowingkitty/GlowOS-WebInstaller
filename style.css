@@ -177,7 +177,7 @@
   padding-bottom: 20px;
   background-size: cover;
   justify-content: flex-end;
-  background-image: url("public/playground_assets/xhain%201-600w.jpg");
+  background-image: url("/playground_assets/xhain%201-600w.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -233,7 +233,7 @@
   margin-bottom: 20px;
   background-size: cover;
   justify-content: center;
-  background-image: url("public/playground_assets/glowsign-1500h.jpeg");
+  background-image: url("/playground_assets/glowsign-1500h.jpeg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -301,6 +301,141 @@
   font-family: Lexend Deca;
   background-color: rgba(255, 255, 255, 0);
 }
+.docsheading {
+  color: #a7a7a7;
+  font-size: 30px;
+  max-width: 370px;
+  font-style: normal;
+  text-align: center;
+  font-family: Lexend Deca;
+  font-weight: 400;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.doc_list_entry {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding-right: 20px;
+  flex-direction: row;
+  padding-bottom: 10px;
+  background-color: var(--dl-color-gray-brightgray);
+}
+.doc_list_entry_heading {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: Lexend Deca;
+}
+.doc_list_entry_headingblock {
+  flex: 0 0 auto;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 15px;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+.doc_list_entry_detailsblock {
+  flex: 0 0 auto;
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.modelpreviewblock {
+  top: -50px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 340px;
+  position: absolute;
+}
+.withmodel {
+  position: relative;
+  align-items: stretch;
+  flex-direction: column;
+}
+.docs_content_container {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  min-height: 63vh;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  justify-content: center;
+  background-color: var(--dl-color-gray-darkgrey);
+}
+.fileicon {
+  flex: 0 0 auto;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: flex-start;
+  margin-right: 10px;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("/playground_assets/file_pdf.svg");
+}
+.downloadicon {
+  flex: 0 0 auto;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  transform: scale(1);
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  text-decoration: none;
+  background-image: url("/playground_assets/icon_download.svg");
+}
+.downloadicon:hover {
+  transform: scale(1.2);
+}
+.doc_details_text {
+  color: var(--dl-color-gray-700);
+  font-family: Lexend Deca;
+  margin-right: 15px;
+}
+.clicktoviewmodeltext {
+  color: var(--dl-color-gray-white);
+  cursor: pointer;
+  font-family: Lexend Deca;
+}
+.file_stl {
+  background-size: cover;
+  background-image: url("/playground_assets/file_stl.svg");
+}
+.file_zip {
+  background-size: cover;
+  background-image: url("/playground_assets/file_zip.svg");
+}
+.docs_entries_container {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  max-width: 750px;
+  margin-top: 50px;
+  align-items: flex-start;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+  flex-direction: column;
+  justify-content: center;
+}
 .Content {
   font-size: 16px;
   font-family: Inter;
@@ -340,6 +475,9 @@
   .feature_text {
     width: 100%;
   }
+  .docs_entries_container {
+    width: 90%;
+  }
 }
 @media(max-width: 767px) {
   .headermenulink {
@@ -374,6 +512,28 @@
   .subheading_menutext {
     margin-left: var(--dl-space-space-unit);
   }
+  .docsheading {
+    font-size: 25px;
+  }
+  .doc_list_entry {
+    flex-direction: column;
+  }
+  .doc_list_entry_headingblock {
+    width: 100%;
+    padding-left: 4px;
+  }
+  .withmodel {
+    flex-direction: column;
+  }
+  .downloadicon {
+    top: 0px;
+    right: 0px;
+    position: absolute;
+  }
+  .docs_entries_container {
+    width: 90%;
+    max-width: 400px;
+  }
 }
 @media(max-width: 479px) {
   .feature {
@@ -385,5 +545,12 @@
   }
   .feature_text_heading {
     margin-bottom: 10px;
+  }
+  .doc_list_entry_headingblock {
+    width: 100%;
+    padding-left: 4px;
+  }
+  .doc_list_entry_detailsblock {
+    width: 100%;
   }
 }

@@ -5,7 +5,7 @@
   height: 85px;
   z-index: 100;
   position: fixed;
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 5px 10px 0px rgba(243, 0, 0, 0.2);
   background-color: var(--dl-color-gray-brightgray);
 }
 .header-navbar-interactive {
@@ -375,6 +375,13 @@
 
 
 
+
+
+
+
+
+
+
 @media(max-width: 767px) {
   .need-help-with-a-project-container {
     padding-left: 25px;
@@ -458,6 +465,13 @@
 
 
 
+
+
+
+
+
+
+
 .footer-web-links-container {
   width: 100%;
   height: auto;
@@ -493,6 +507,13 @@
 
 
 
+
+
+
+
+
+
+
 .install-glow-o-s-container {
   width: 100%;
   display: flex;
@@ -506,7 +527,7 @@
   height: 95vh;
   display: flex;
   position: relative;
-  min-height: 380px;
+  min-height: 550px;
   align-items: center;
   padding-top: 80px;
   flex-direction: column;
@@ -524,12 +545,65 @@
   font-family: Lexend Deca;
   font-weight: 400;
 }
-.install-glow-o-s-text1 {
+.install-glow-o-s-text01 {
   color: var(--dl-color-gray-900);
   margin-top: 30px;
 }
 .install-glow-o-s-select {
   margin: 30px;
+}
+.install-glow-o-s-text02 {
+  color: var(--dl-color-gray-900);
+  margin-top: 10px;
+  text-align: center;
+}
+.install-glow-o-s-text03 {
+  font-family: Lexend Deca;
+}
+.install-glow-o-s-text04 {
+  font-family: Lexend Deca;
+}
+.install-glow-o-s-text05 {
+  font-family: Lexend Deca;
+}
+.install-glow-o-s-text06 {
+  font-family: Lexend Deca;
+}
+.install-glow-o-s-text07 {
+  font-family: Lexend Deca;
+}
+.install-glow-o-s-text08 {
+  font-family: Lexend Deca;
+}
+.install-glow-o-s-text09 {
+  font-family: Lexend Deca;
+}
+.install-glow-o-s-text10 {
+  font-family: Lexend Deca;
+}
+.install-glow-o-s-text11 {
+  font-family: Lexend Deca;
+}
+.install-glow-o-s-text12 {
+  font-family: Lexend Deca;
+}
+.install-glow-o-s-text13 {
+  color: var(--dl-color-gray-white);
+  font-style: normal;
+  font-family: Lexend Deca;
+  font-weight: 700;
+}
+.install-glow-o-s-text14 {
+  color: var(--dl-color-gray-white);
+  font-style: normal;
+  font-family: Lexend Deca;
+  font-weight: 700;
+}
+.install-glow-o-s-text15 {
+  color: var(--dl-color-gray-white);
+  font-style: normal;
+  font-family: Lexend Deca;
+  font-weight: 700;
 }
 @media(max-width: 767px) {
   .install-glow-o-s-container1 {
