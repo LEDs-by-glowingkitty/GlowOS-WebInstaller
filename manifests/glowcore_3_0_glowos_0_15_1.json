@@ -1,0 +1,13 @@
+{
+  "name": "GlowOS",
+  "version": "0.15.1",
+  "home_assistant_domain": "glowos",
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        { "path": "glowcore_v3_0.bin", "offset": 0 }
+      ]
+    }
+  ]
+}
