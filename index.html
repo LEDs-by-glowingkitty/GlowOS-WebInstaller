@@ -32,6 +32,10 @@
         background-color: var(--dl-color-gray-white);
 
       }
+      
+      .invisible {
+        visibility: hidden;
+      }
     </style>
     <link
       rel="shortcut icon"
@@ -63,7 +67,7 @@
 
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body onload="checkSupported()">
+  <body>
     <div>
       <link href="./index.css" rel="stylesheet" />
       <script
@@ -190,6 +194,8 @@
 
           <label for="software-dropdown">Select the GlowOS version:</label>
           <select id="software-dropdown" disabled></select>
+
+          <div id="connect-message">After that, you can connect to the device using the button that appears below.</div>
 
           <p class="button-row" align="center">
             <esp-web-install-button class="invisible"></esp-web-install-button>
