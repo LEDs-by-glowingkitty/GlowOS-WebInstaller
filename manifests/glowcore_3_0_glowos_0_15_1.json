@@ -6,10 +6,7 @@
     {
       "chipFamily": "ESP32-S3",
       "parts": [
-        { "path": "../bootloader/esp32_s3_bootloader.bin", "offset": 0  },
-        { "path": "../firmware/glowcore_v3_0/glowOS_v0_15_1/partitions.bin", "offset": 32768 },
-        { "path": "../firmware/glowcore_v3_0/glowOS_v0_15_1/firmware.bin", "offset": 65536 },
-        { "path": "../firmware/glowcore_v3_0/glowOS_v0_15_1/spiffs.bin", "offset": 3342336 }
+        { "path": "../firmware/glowcore_v3_0/glowOS_v0_15_1/firmware.bin", "offset": 0 }
       ]
     }
   ]
