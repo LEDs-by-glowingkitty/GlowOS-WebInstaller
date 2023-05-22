@@ -401,7 +401,9 @@
       data-section-id="navbar"
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
     ></script>
-    <script>  
+    <script>
+      window.selectedBaudRate = 115200;
+      
       function generateDownloadURL(input) {
           let baseURL = "https://install.glowingkitty.com/";
           let splitInput = input.split("/");
