@@ -6,8 +6,8 @@
     {
       "chipFamily": "ESP32",
       "parts": [
-        { "path": "esp32_bootloader_v4.bin", "offset": 0 },
-        { "path": "magiqwand_v1_0_rc1.bin", "offset": 65536 }
+        { "path": "../bootloader/esp32_bootloader.bin", "offset": 0 },
+        { "path": "../firmware/magiqwand_v1_0_rc1/glowOS_v0_15_1/firmware.bin", "offset": 65536 }
       ]
     }
   ]
