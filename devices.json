@@ -12,20 +12,9 @@
             ]
         },
         {
-            "tag": "glowtower_2_0",
+            "tag": "glowlighttower_2_0",
             "chipfamily": "ESP32-S3",
-            "name": "GlowTower v2.0",
-            "projects": [
-                {   
-                    "tag": "glowtower_glowlight_2_0_glowos_0_15_1",
-                    "name":"GlowOS v0.15.1"
-                }
-            ]
-        },
-        {
-            "tag": "glowlight_2_0",
-            "chipfamily": "ESP32-S3",
-            "name": "GlowLight v2.0",
+            "name": "GlowLight/GlowTower v2.0",
             "projects": [
                 {   
                     "tag": "glowtower_glowlight_2_0_glowos_0_15_1",
