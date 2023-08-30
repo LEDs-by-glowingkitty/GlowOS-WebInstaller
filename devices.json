@@ -1,28 +1,6 @@
 {
     "devices": [
         {
-            "tag": "glowtower_1_0",
-            "chipfamily": "ESP32",
-            "name": "GlowTower v1.0",
-            "projects": [
-                {   
-                    "tag": "glowtower_1_0_glowos_0_15_1",
-                    "name":"GlowOS v0.15.1"
-                }
-            ]
-        },
-        {
-            "tag": "glowlight_1_0",
-            "chipfamily": "ESP32",
-            "name": "GlowLight v1.0",
-            "projects": [
-                {   
-                    "tag": "glowlight_1_0_glowos_0_15_1",
-                    "name":"GlowOS v0.15.1"
-                }
-            ]
-        },
-        {
             "tag": "glowcore_3_0",
             "chipfamily": "ESP32-S3",
             "name": "GlowCore v3.0",
@@ -34,78 +12,23 @@
             ]
         },
         {
-            "tag": "glowcore_2_0",
-            "chipfamily": "ESP32",
-            "name": "GlowCore v2.0",
+            "tag": "glowtower_2_0",
+            "chipfamily": "ESP32-S3",
+            "name": "GlowTower v2.0",
             "projects": [
                 {   
-                    "tag": "glowcore_2_0_glowos_0_15_1",
+                    "tag": "glowtower_glowlight_2_0_glowos_0_15_1",
                     "name":"GlowOS v0.15.1"
                 }
             ]
         },
         {
-            "tag": "glowcore_mini_3_0",
-            "chipfamily": "ESP32",
-            "name": "GlowCore Mini v3.0",
+            "tag": "glowlight_2_0",
+            "chipfamily": "ESP32-S3",
+            "name": "GlowLight v2.0",
             "projects": [
                 {   
-                    "tag": "glowcore_mini_3_0_glowos_0_15_1",
-                    "name":"GlowOS v0.15.1"
-                }
-            ]
-        },
-        {
-            "tag": "glowcore_mini_2_0",
-            "chipfamily": "ESP32",
-            "name": "GlowCore Mini v2.0",
-            "projects": [
-                {   
-                    "tag": "glowcore_mini_2_0_glowos_0_15_1",
-                    "name":"GlowOS v0.15.1"
-                }
-            ]
-        },
-        {
-            "tag": "glowsign_1_0",
-            "chipfamily": "ESP32",
-            "name": "GlowSign v1.0",
-            "projects": [
-                {   
-                    "tag": "glowsign_1_0_glowos_0_15_1",
-                    "name":"GlowOS v0.15.1"
-                }
-            ]
-        },
-        {
-            "tag": "glowband_1_0",
-            "chipfamily": "ESP32",
-            "name": "GlowBand v1.0",
-            "projects": [
-                {   
-                    "tag": "glowband_1_0_glowos_0_15_1",
-                    "name":"GlowOS v0.15.1"
-                }
-            ]
-        },
-        {
-            "tag": "magiqwand_1_0_rc2",
-            "chipfamily": "ESP32",
-            "name": "MagiqWand v1.0 RC2",
-            "projects": [
-                {   
-                    "tag": "magiqwand_1_0_rc2_glowos_0_15_1",
-                    "name":"GlowOS v0.15.1"
-                }
-            ]
-        },
-        {
-            "tag": "magiqwand_1_0_rc1",
-            "chipfamily": "ESP32",
-            "name": "MagiqWand v1.0 RC1",
-            "projects": [
-                {   
-                    "tag": "magiqwand_1_0_rc1_glowos_0_15_1",
+                    "tag": "glowtower_glowlight_2_0_glowos_0_15_1",
                     "name":"GlowOS v0.15.1"
                 }
             ]

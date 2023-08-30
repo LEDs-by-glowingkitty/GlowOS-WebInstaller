@@ -7,7 +7,7 @@
       {
         "chipFamily": "ESP32-S3",
         "parts": [
-          { "path": "glowcore_3_0_glowos_0_15_1.bin", "offset": 0 }
+          { "path": "glowtower_glowlight_2_0_glowos_0_15_1.bin", "offset": 0 }
         ]
       }
     ]
