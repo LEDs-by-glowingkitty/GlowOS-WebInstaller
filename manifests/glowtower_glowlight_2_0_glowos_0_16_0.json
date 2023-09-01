@@ -1,0 +1,14 @@
+{
+    "name": "GlowOS",
+    "version": "0.16.0",
+    "home_assistant_domain": "glowos",
+    "new_install_prompt_erase": false,
+    "builds": [
+      {
+        "chipFamily": "ESP32-S3",
+        "parts": [
+          { "path": "glowtower_glowlight_2_0_glowos_0_16_0.bin", "offset": 0 }
+        ]
+      }
+    ]
+  }

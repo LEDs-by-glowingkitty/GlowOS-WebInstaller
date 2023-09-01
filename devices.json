@@ -6,6 +6,10 @@
             "name": "GlowCore v3.0",
             "projects": [
                 {   
+                    "tag": "glowcore_3_0_glowos_0_16_0",
+                    "name":"GlowOS v0.16.0"
+                },
+                {   
                     "tag": "glowcore_3_0_glowos_0_15_1",
                     "name":"GlowOS v0.15.1"
                 }
@@ -16,6 +20,10 @@
             "chipfamily": "ESP32-S3",
             "name": "GlowLight/GlowTower v2.0",
             "projects": [
+                {   
+                    "tag": "glowtower_glowlight_2_0_glowos_0_16_0",
+                    "name":"GlowOS v0.16.0"
+                },
                 {   
                     "tag": "glowtower_glowlight_2_0_glowos_0_15_1",
                     "name":"GlowOS v0.15.1"
