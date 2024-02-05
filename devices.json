@@ -31,6 +31,28 @@
             ]
         },
         {
+            "tag": "glowsign_1_0",
+            "chipfamily": "ESP32",
+            "name": "GlowSign v1.0",
+            "projects": [
+                {   
+                    "tag": "glowsign_v1_0_glowos_v0_16_0",
+                    "name":"GlowOS v0.16.0"
+                }
+            ]
+        },
+        {
+            "tag": "magiqwand_1_0",
+            "chipfamily": "ESP32",
+            "name": "MagiqWand v1.0",
+            "projects": [
+                {   
+                    "tag": "magiqwand_v1_0_RC2_glowos_v0_16_0",
+                    "name":"GlowOS v0.16.0"
+                }
+            ]
+        },
+        {
             "tag": "glowlight_1_0",
             "chipfamily": "ESP32",
             "name": "GlowLight v1.0",

@@ -1,0 +1,14 @@
+{
+    "name": "GlowOS",
+    "version": "0.16.0",
+    "home_assistant_domain": "glowos",
+    "new_install_prompt_erase": false,
+    "builds": [
+      {
+        "chipFamily": "ESP32",
+        "parts": [
+          { "path": "glowsign_v1_0_RC2_glowos_v0_16_0.bin", "offset": 0 }
+        ]
+      }
+    ]
+  }
