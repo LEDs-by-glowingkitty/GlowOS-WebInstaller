@@ -7,7 +7,7 @@
       {
         "chipFamily": "ESP32",
         "parts": [
-          { "path": "glowlight_1_0_glowos_0_16_0.bin", "offset": 0 }
+          { "path": "glowlight_v1_0_glowos_v0_16_0.bin", "offset": 0 }
         ]
       }
     ]
