@@ -36,7 +36,7 @@
             "name": "GlowSign v1.0",
             "projects": [
                 {   
-                    "tag": "glowsign_v1_0_glowos_v0_16_0",
+                    "tag": "glowsign_v1_0_RC2_glowos_v0_16_0",
                     "name":"GlowOS v0.16.0"
                 }
             ]
