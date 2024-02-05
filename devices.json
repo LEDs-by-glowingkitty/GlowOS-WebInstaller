@@ -36,7 +36,7 @@
             "name": "GlowLight v1.0",
             "projects": [
                 {   
-                    "tag": "glowlight_1_0_glowos_0_16_0",
+                    "tag": "glowlight_v1_0_glowos_v0_16_0",
                     "name":"GlowOS v0.16.0"
                 }
             ]
