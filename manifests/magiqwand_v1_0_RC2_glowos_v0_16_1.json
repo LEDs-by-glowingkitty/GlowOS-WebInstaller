@@ -1,0 +1,17 @@
+{
+    "name": "GlowOS",
+    "version": "0.16.1",
+    "home_assistant_domain": "glowos",
+    "new_install_prompt_erase": false,
+    "builds": [
+        {
+            "chipFamily": "ESP32",
+            "parts": [
+                {
+                    "path": "magiqwand_v1_0_RC2_glowos_v0_16_1.bin",
+                    "offset": 0
+                }
+            ]
+        }
+    ]
+}
